@@ -3,9 +3,9 @@ FROM alpine:3.5
 
 # ENV VERSION=v4.8.2 NPM_VERSION=2
 # ENV VERSION=v6.10.2 NPM_VERSION=3
-ENV VERSION=v7.9.0 NPM_VERSION=4
+ENV VERSION=v6.9.0 NPM_VERSION=4
 
-# For base builds
+# For base builds this cant be deleted
 #ENV CONFIG_FLAGS="--fully-static --without-npm" DEL_PKGS="libstdc++" RM_DIRS=/usr/include
 
 RUN apk add --no-cache curl make gcc g++ python linux-headers binutils-gold gnupg libstdc++ && \
